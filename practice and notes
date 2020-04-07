@@ -41,3 +41,40 @@ header{
 
 </html>
 -->
+
+Lesson
+
+<?php
+
+foreach($names as $name){
+echo "<li>$name</li>";
+}
+?>
+
+
+
+<?php
+
+$names = [
+'dani',
+'eric',
+'choni'
+
+
+];
+
+
+$animals = [
+'cat',
+'dog',
+'zebra',
+'horse',
+'donkey'
+
+
+];
+
+require 'index.view.php';
+
+git config --global user.email "danibeal99@gmail.com"
+git config --global user.name "DanielleBeal"
