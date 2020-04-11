@@ -27,7 +27,20 @@
       </li>
 
       <li>
-          <strong>Assignment completed:</strong><?=$task['Completed']?'Complete':'Incomplete';?>
+
+        <strong>Assignment completed:</strong>
+
+        <?php if($task['Completed']) : ?>
+
+          <span class="icon">&#9989;</span>
+        <?php else: ?>
+
+          <span class="icon">&#9940;</span>
+
+
+    <?php  endif;?>
+
+
       </li>
 
   </ul>
