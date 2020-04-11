@@ -10,20 +10,25 @@
 
 <body>
 
+  <h1>Task for the day</h1>
+
   <ul>
 
-<?php foreach ($person as $key => $feature) : ?>
+      <li>
+          <strong>Name:</strong><?=$task['title'];?>
+      </li>
 
-  <li><strong><?= $key; ?></strong> <?= $feature; ?></li>
+      <li>
+          <strong>Dute Date:</strong><?=$task['due'];?>
+      </li>
 
-<?php endforeach; ?>
+      <li>
+          <strong>Person responsible:</strong><?=$task['Assigned_to'];?>
+      </li>
 
-
-<?php foreach ($task as $key => $plan) : ?>
-
-  <li><strong><?= $key; ?></strong> <?= $plan; ?></li>
-
-<?php endforeach; ?>
+      <li>
+          <strong>Assignment completed:</strong><?=$task['Completed']?'Complete':'Incomplete';?>
+      </li>
 
   </ul>
 

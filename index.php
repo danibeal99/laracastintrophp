@@ -20,11 +20,11 @@ unset($person['age']);
 $task = [
 
 'title'=> 'Make dinner',
-'Due'=>'Tonight',
+'due'=>'Tonight',
 'Assigned_to'=> 'Eric',
-'Completed' => 'No'
+'Completed' => false //($completed)
 
-  
+
 ];
 
 require 'index.view.php';
