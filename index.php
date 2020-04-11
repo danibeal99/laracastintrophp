@@ -2,29 +2,19 @@
 <?php
 
 
-$person =[
+require 'functions.php';
 
-  'age'=> 24,
-  'hair'=>'blonde',
-  'career'=> 'tech specialist'
-];
+//$animals = ['dog','cat'];
 
-
-$person['name'] = 'Dani';
+//dd($animals);
 
 
-unset($person['age']);
-
-// Homework 7
-
-$task = [
-
-'title'=> 'Make dinner',
-'due'=>'Tonight',
-'Assigned_to'=> 'Eric',
-'Completed' => false //($completed)
+if (agecheck(25)) {
+  echo "You can enter the club.";
+} else {
+  echo "You cannot enter the club.";
+}
 
 
-];
 
 require 'index.view.php';
