@@ -9,4 +9,11 @@ $person =[
   'career'=> 'tech specialist'
 ];
 
+
+$person['name'] = 'Dani';
+
+
+unset($person['age']);
+
+
 require 'index.view.php';
