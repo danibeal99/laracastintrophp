@@ -18,6 +18,13 @@
 
 <?php endforeach; ?>
 
+
+<?php foreach ($task as $key => $plan) : ?>
+
+  <li><strong><?= $key; ?></strong> <?= $plan; ?></li>
+
+<?php endforeach; ?>
+
   </ul>
 
 </body>
