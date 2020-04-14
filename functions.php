@@ -1,15 +1,15 @@
 
 <?php
 
-//function dd ($data){
+function dd ($data){
 
-//echo '<pre>';
+echo '<pre>';
 
-//die(var_dump($data));
+die(var_dump($data));
 
-//echo '</pre>';
+echo '</pre>';
 
-//}
+}
 
 function agecheck ($age){
 

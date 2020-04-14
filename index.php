@@ -2,19 +2,47 @@
 <?php
 
 
-require 'functions.php';
+class Task{
 
-//$animals = ['dog','cat'];
+  public $description;
 
-//dd($animals);
+  public $completed = false;
+
+  public function __construct($description)
+
+  {
+
+      $this->description = $description;
+
+    }
+
+    public function complete()
+
+    {
+
+      $this->completed = true;
+
+    }
 
 
-if (agecheck(25)) {
-  echo "You can enter the club.";
-} else {
-  echo "You cannot enter the club.";
+    public function iscomplete()
+    {
+
+      return $this->completed;
+
+    }
+
 }
 
+$tasks = [
+
+  new Task ('Go to the store'),
+  new Task ('Finsih my homework'),
+  new Task ('clean my room'),
+
+];
+
+$tasks[0]->complete();
 
 
 require 'index.view.php';
