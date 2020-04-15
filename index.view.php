@@ -12,27 +12,26 @@
 
   <ul>
 
-<?php foreach ($tasks as $task) :?>
+  <?php foreach ($tasks as $task) :?>
 
-  <li>
+    <li>
 
-    <?php if ($task->completed) : ?>
+      <?php if ($task->completed) : ?>
 
-      <strike><?= $task->description; ?></strike>
+        <strike><?= $task->description; ?></strike>
 
-    <?php else: ?>
+      <?php else: ?>
 
-    <?= $task->description; ?>
+      <?= $task->description; ?>
 
-  <?php endif; ?>
+    <?php endif; ?>
 
 
-  </li>
+    </li>
 
-<?php endforeach; ?>
+  <?php endforeach; ?>
 
-</ul>
-
+  </ul>
 
 </body>
 
