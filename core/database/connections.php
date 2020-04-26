@@ -1,4 +1,5 @@
-<<?php
+<?php
+
 
 
 class connection
@@ -9,7 +10,7 @@ class connection
 
     {
 
- 
+
       try {
 
       return NEW PDO (

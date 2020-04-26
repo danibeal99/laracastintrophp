@@ -10,7 +10,19 @@
 
 <body>
 
-  <ul>
+  <nav>
+
+    <ul>
+
+        <li><a href="/aboutus.php">About page</a></li>
+
+        <li><a href="/Contact.php">Contact page</a></li>
+
+    </ul>
+
+  </nav>
+
+    <h1>My Tasks</h1>
 
   <?php foreach ($tasks as $task) :?>
 
