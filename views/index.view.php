@@ -1,30 +1,10 @@
 
-<!Doctype html>
+  <?php require('partials/head.php');?>
 
-<html lang="en">
-<head>
-  <meta charset="uTF-8">
-  <title>Document</title>
-
-</head>
-
-<body>
-
-  <nav>
-
-    <ul>
-
-        <li><a href="/aboutus.php">About page</a></li>
-
-        <li><a href="/Contact.php">Contact page</a></li>
-
-    </ul>
-
-  </nav>
 
     <h1>My Tasks</h1>
 
-  <?php foreach ($tasks as $task) :?>
+<?php foreach ($tasks as $task) :?>
 
     <li>
 
@@ -41,10 +21,6 @@
 
     </li>
 
-  <?php endforeach; ?>
+<?php endforeach; ?>
 
-  </ul>
-
-</body>
-
-</html>
+<?php require ('partials/footer.php'); ?>

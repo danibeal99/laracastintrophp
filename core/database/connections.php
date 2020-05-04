@@ -10,7 +10,6 @@ class connection
 
     {
 
-
       try {
 
       return NEW PDO (
