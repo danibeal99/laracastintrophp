@@ -1,14 +1,14 @@
 <?php
 
 
-$router -> define ([
+$router->get('', 'controllers/index.php');
 
-  '' => 'controllers/index.php',
+$router->get('about', 'controllers/about.php');
 
-  'about' => 'controllers/about.php',
+$router->get('about/culture', 'controllers/about-culture.php');
 
-  'about/culture' => 'controllers/about-culture.php',
 
-  'contact-our-company' => 'controllers/contact.php'
+$router->post('names', 'controllers/add-name.php');
 
-]);
+
+var_dump ($router->routes);

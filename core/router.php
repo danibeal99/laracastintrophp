@@ -5,7 +5,12 @@ class router
 
 {
 
-    protected $routes = [];
+    public $routes = [
+
+      'GET' => [],
+      'POST' => []
+
+    ];
 
     public static function load($file)
 
@@ -19,21 +24,36 @@ class router
 
     }
 
-    public function define($routes)
+
+    public function get($uri, $controller)
 
     {
 
-          $this->routes = $routes;
+          $this->routes['GET'][$URI] = $controller;
 
     }
 
-    public function direct ($uri)
+
+
+    public function post($uri, $controller)
 
     {
 
-      if (array_key_exists($uri, $this->routes)) {
+          $this->routes['POST'][$URI] = $controller;
 
-        return $this->routes[$uri];
+    }
+
+
+
+    public function direct($uri, $requesttype)
+
+    {
+
+      if (array_key_exists($uri, $this->routes[$requesttype]))
+
+      {
+
+        return $this->routes[$requesttype][$uri];
 
       }
 
