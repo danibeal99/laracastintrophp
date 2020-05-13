@@ -1,7 +1,6 @@
-
 <?php
 
-$database= require 'core/bootstrap.php';
+$database = require 'core/database/bootstrap.php';
 
 
 //die(var_dump($app));

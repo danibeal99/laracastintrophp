@@ -29,7 +29,7 @@ class router
 
     {
 
-          $this->routes['GET'][$URI] = $controller;
+          $this->routes['GET'][$uri] = $controller;
 
     }
 
@@ -39,7 +39,7 @@ class router
 
     {
 
-          $this->routes['POST'][$URI] = $controller;
+          $this->routes['POST'][$uri] = $controller;
 
     }
 
